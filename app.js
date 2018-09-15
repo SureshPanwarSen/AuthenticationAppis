@@ -73,7 +73,7 @@ app.get('/logout', userController.logout);
 app.post('/forgot', userController.postForgot);
 app.post('/reset/:token', userController.postReset);
 app.post('/signup', userController.postSignup);
-app.post('/account/password', passportConfig.isAuthenticated, userController.postUpdatePassword);
+app.post('/updatepassword', passportConfig.isAuthenticated, userController.postUpdatePassword);
 
 if (process.env.NODE_ENV === 'development') {
     app.use(errorHandler());
