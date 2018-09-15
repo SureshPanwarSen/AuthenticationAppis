@@ -1,0 +1,52 @@
+{
+  "name": "authenticationapi",
+  "version": "1.0.0",
+  "description": "Authentication Apis with passport nodemailer",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "NODE_ENV=test mocha --recursive test",
+    "test:coverage": "nyc npm test",
+    "test:unit": "mocha --recursive test/middleware test/models test/routes",
+    "test:integration": "mocha --recursive test/integration",
+    "postinstall": "npm rebuild node-sass"
+  },
+  "author": "Suresh Panwar",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "connect-mongo": "^2.0.1",
+    "dotenv": "^6.0.0",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.3",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.15.6",
+    "express-status-monitor": "^1.1.5",
+    "express-validator": "^5.3.0",
+    "ip": "^1.1.5",
+    "mongoose": "^5.2.7",
+    "morgan": "^1.9.0",
+    "node-sass": "^4.9.3",
+    "nodemailer": "^4.6.7",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-oauth": "^1.0.0",
+    "passport-openid": "^0.4.0",
+    "pug": "^2.0.3",
+    "validator": "^10.5.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
+    "sinon": "^6.1.5",
+    "sinon-mongoose": "^2.2.1",
+    "supertest": "^3.1.0"
+  }
+}
